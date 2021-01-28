@@ -1,16 +1,19 @@
 {
   "name": "@luke-codewalker/utils",
   "version": "1.0.0",
-  "description": "",
+  "description": "My personal collection of utility functions",
   "main": "./dist/index.js",
   "scripts": {
     "build": "tsc",
     "test": "ts-mocha ./tests/**/*.test.ts",
     "coverage": "nyc npm test"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "utils",
+    "random"
+  ],
+  "author": "Luke Codewalker <info@luke-codewalker.com>",
+  "license": "MIT",
   "devDependencies": {
     "@types/chai": "^4.2.14",
     "@types/mocha": "^8.2.0",
