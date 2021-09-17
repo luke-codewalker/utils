@@ -1,6 +1,6 @@
 {
   "name": "@luke-codewalker/utils",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "My personal collection of utility functions",
   "main": "./dist/index.js",
   "scripts": {
@@ -17,6 +17,7 @@
     "dist"
   ],
   "author": "Luke Codewalker <info@luke-codewalker.com>",
+  "repository": "https://github.com/luke-codewalker/utils",
   "license": "MIT",
   "devDependencies": {
     "@types/chai": "^4.2.14",
@@ -28,7 +29,6 @@
     "typescript": "^4.1.3"
   },
   "directories": {
-    "example": "examples",
     "test": "tests"
   },
   "dependencies": {}
