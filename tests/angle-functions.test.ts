@@ -1,5 +1,5 @@
 import { expect } from "chai";
-import { degreesToRadians, radiansToDegrees } from "../src/math-utils/angle-functions";
+import { degreesToRadians, radiansToDegrees } from "../src/utils/angle-functions";
 
 describe('Math utility functions: angle functions', () => {
     describe('radiansToDegrees', () => {

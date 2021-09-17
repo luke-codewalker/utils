@@ -1,5 +1,5 @@
 import { expect } from "chai";
-import { random, pickRandom } from "../src/math-utils/random-functions";
+import { random, pickRandom } from "../src/utils/random-functions";
 
 describe('Math utility functions: random functions', () => {
     describe('random', () => {
