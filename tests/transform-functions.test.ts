@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import { limit, map } from '../src/utils/transform-functions';
+import { limit, map, norm } from '../src/utils/transform-functions';
 
 describe('Transform functions', () => {
     describe('limit', () => {
@@ -39,6 +39,18 @@ describe('Transform functions', () => {
 
             const otherMapped = map(20, 0, 100, 100, 0);
             expect(otherMapped).to.equal(80);
+        })
+    })
+
+    describe('norm', () => {
+        it('should normalize a value from any range to between 0 and 1', () => {
+            const normed = norm(75, 0, 100);
+            expect(normed).to.equal(0.75)
+        })
+
+        it('should constrain a value when normalizing', () => {
+            const normed = norm(175, 0, 100);
+            expect(normed).to.equal(1.0)
         })
     })
 })
