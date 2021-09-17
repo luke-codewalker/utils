@@ -16,4 +16,4 @@ export const random = (min: number = 0, max?: number) => {
  * Pick a random element from the given array
  * @param {unknown[]} array 
  */
-export const pickRandom = (array: unknown[]) => array[Math.floor(random(array.length))]
+export const pickRandom = <T = unknown>(array: T[]): T => array[Math.floor(random(array.length))]
