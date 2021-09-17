@@ -8,7 +8,12 @@ export const random = (min: number = 0, max?: number) => {
         max = min;
         min = 0;
     }
-    return min + Math.random() * ((max ?? 1) - min);
+    const range = (max ?? 1) - min;
+    return min + Math.random() * range;
 }
 
+/**
+ * Pick a random element from the given array
+ * @param {unknown[]} array 
+ */
 export const pickRandom = (array: unknown[]) => array[Math.floor(random(array.length))]
