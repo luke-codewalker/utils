@@ -1,7 +1,7 @@
 import { expect } from "chai";
 import { random, pickRandom } from "../src/utils/random-functions";
 
-describe('Math utility functions: random functions', () => {
+describe('Random functions', () => {
     describe('random', () => {
         it("should work without arguments", () => {
             const r = random();

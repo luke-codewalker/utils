@@ -1,7 +1,7 @@
 import { expect } from "chai";
 import { degreesToRadians, radiansToDegrees } from "../src/utils/angle-functions";
 
-describe('Math utility functions: angle functions', () => {
+describe('Angle functions', () => {
     describe('radiansToDegrees', () => {
         it("should convert radians to degrees", () => {
             expect(radiansToDegrees(Math.PI)).to.equal(180);
