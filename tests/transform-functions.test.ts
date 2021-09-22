@@ -12,6 +12,15 @@ describe('Transform functions', () => {
             const limited = limit(-10, 0, 5);
             expect(limited).to.equal(0);
         });
+
+        it('should just return values if inside bounds', () => {
+            const limited = limit(2.45, 0, 5);
+            expect(limited).to.equal(2.45);
+        });
+
+        it('should throw an error on incorrect bounds', () => {
+            expect(() => limit(10, 5, 0)).to.throw();
+        });
     })
 
     describe('map', () => {

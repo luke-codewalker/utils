@@ -5,15 +5,8 @@
  * @param upperBound the upper bound
  */
 export const limit = (n: number, lowerBound: number, upperBound: number): number => {
-    if (n > upperBound) {
-        return upperBound;
-    }
-
-    if (n < lowerBound) {
-        return lowerBound;
-    }
-
-    return n;
+    if (lowerBound >= upperBound) throw new Error(`lowerBound must be smaller than upperBound, but lowerBound ${lowerBound} and upperBound ${upperBound} was given`);
+    return Math.max(lowerBound, Math.min(upperBound, n));
 }
 
 /**
